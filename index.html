@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tabs for selecting view -->
+        <div class="view-tabs">
+            <button class="view-tab" id="bullish-tab">Bullish</button>
+            <button class="view-tab" id="bearish-tab">Bearish</button>
+            <button class="view-tab" id="rangebound-tab">RangeBound</button>
+            <button class="view-tab" id="volatile-tab">Volatile</button>
+        </div>
+
+        <!-- Date Dropdown -->
+        <div class="date-dropdown">
+            <label for="dates">Select Date:</label>
+            <select id="dates">
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+
+        <!-- Strategy Cards -->
+        <div class="strategy-cards">
+            <!-- Cards will be populated dynamically -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" style="display: none;">
+            No strategies available for this date.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
